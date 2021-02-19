@@ -100,7 +100,8 @@ body {
     background: #C5AC2D;
     padding: 16px 19px 15px;
     border: 1px solid transparent;
-    transition: .5s;
+    transition: all .5s;    
+    display: inline-block;
 }
 
 .application-btn:hover {
@@ -303,47 +304,46 @@ body {
 }
 
 .benefits__list-item:nth-child(1),
-.benefits__list-item:nth-child(7){
+.benefits__list-item:nth-child(7) {
     margin-right: 10px;
 }
 
 .benefits__list-item:nth-child(2),
-.benefits__list-item:nth-child(6){
+.benefits__list-item:nth-child(6) {
     margin-right: 60px;
 }
 
 .benefits__list-item:nth-child(3),
-.benefits__list-item:nth-child(5){
+.benefits__list-item:nth-child(5) {
     margin-right: 110px;
 }
 
-.benefits__list-item:nth-child(4){
+.benefits__list-item:nth-child(4) {
     margin-right: 160px;
 }
 
-.benefits__text{
+.benefits__text {
     margin-bottom: 30px;
     text-align: right;
 }
 
-.benefits__text + .benefits__text{
+.benefits__text+.benefits__text {
     width: 267px;
     margin-left: auto;
 }
 
-.video-popup{
+.video-popup {
     text-transform: uppercase;
     color: #FEFEFE;
     background: #C5AC2D;
-    padding:6px 34px 6px 64px;
+    padding: 6px 34px 6px 64px;
     border: 1px solid transparent;
-    transition: .5s;
     text-align: center;
     display: inline-block;
     position: relative;
 }
 
-.video-popup::before{
+.video-popup::before {
     content: '';
     position: absolute;
     width: 25px;
@@ -353,13 +353,13 @@ body {
     left: 34px;
 }
 
-.reviews{
+.reviews {
     padding: 100px 0;
     background: #332208;
     color: #FEFEFE;
 }
 
-.reviews__title{
+.reviews__title {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 500;
     font-size: 24px;
@@ -367,13 +367,13 @@ body {
     margin-bottom: 70px;
 }
 
-.slick-initialized .reviews__item{
+.slick-initialized .reviews__item {
     display: flex;
 }
 
-.reviews__item{
+.reviews__item {
     border: 1px solid #C5AC2D;
-    padding:45px 30px;
+    padding: 45px 30px;
     flex-direction: column;
     justify-content: space-between;
     width: 270px;
@@ -382,26 +382,114 @@ body {
     margin-right: 30px;
 }
 
-.reviews__item-name{
+.reviews__item-name {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
 }
 
-.reviews__slider .slick-dots button{
+.reviews__slider .slick-dots button {
     background-color: #C5AC2D;
 }
 
-.reviews__slider .slick-dots{
+.reviews__slider .slick-dots {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 35px;
 }
 
-.reviews__slider  button{
+.reviews__slider button {
     margin: 0 5px;
     line-height: 12px;
 }
 
+.feedback {
+    padding: 100px 0;
+}
+
+.feedback__inner {
+    display: flex;
+    align-items: center;
+}
+
+.feedback__images {
+    width: 50%;
+}
+
+.feedback__form {
+    width: 415px;
+    margin: 0 auto;
+}
+
+.feedback__title {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 5px;
+}
+
+.feedback__text {
+    margin-bottom: 30px;
+}
+
+.feedback__input {
+    display: block;
+    padding: 20px 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.feedback__input::placeholder {
+    font-family: Roboto Condensed;
+    line-height: 19px;
+    font-size: 16px;
+    color: #1B1818;
+}
+
+.feedback__btn {
+    font-family: Roboto Condensed;
+    text-transform: uppercase;
+    color: #FEFEFE;
+    background: #C5AC2D;
+    padding: 16px 36px 15px;
+    border: 1px solid transparent;
+    display: inline-block;
+    margin-top: 50px;
+    font-size: 16px;
+    line-height: 19px;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.feedback__btn:hover{
+    color: #C5AC2D;
+    background: #FEFEFE;
+    border: 1px solid #C5AC2D;
+}
+
+.footer{
+    padding: 100px 0 24px;    
+    background: #332208;
+}
+
+.footer__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 21px;
+}
+
+.footer__social{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__social-item{
+    margin: 0 15px;
+}
