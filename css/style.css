@@ -493,3 +493,7 @@ body {
 .footer__social-item{
     margin: 0 15px;
 }
+
+@media(max-width: 1000px){
+    
+}
